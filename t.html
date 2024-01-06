@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ungaratto93 - Desenvolvedor</title>
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        header {
+            padding: 20px;
+        }
+
+        header img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+        }
+
+        header h1 {
+            margin-top: 10px;
+        }
+
+        section {
+            padding: 50px 10px;
+            text-align: center;
+        }
+
+        section h2 {
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+
+        #tech-section {
+            text-align: center;
+        }
+
+        #tech-section h2 {
+            margin-bottom: 20px;
+        }
+
+        #tech-icons {
+            display: flex;
+            justify-content: center; /* Alinha os ícones no centro horizontalmente */
+        }
+
+        #tech-icons img {
+            width: 30px; /* Ajuste conforme necessário */
+            height: 30px;
+            margin: 0 5px; /* Espaçamento entre os ícones */
+        }
+
+        #back-to-top {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            left: 20px; /* Mude para o lado esquerdo */
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        #back-to-top:hover {
+            background-color: #555;
+        }
+
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <img src="imagens/1703724534902.jpg" alt="Sua Foto">
+        <h1>@ungaratto93</h1>
+    </header>
+
+    <section>
+        <h2>Navegue por aqui</h2>
+        <nav>
+            <a href="#tech-section">Tecnologias</a>
+            <a href="#educacao-formal">Educacao</a>
+            <a href="#experiencia-profissional">Experiencia</a>
+            <a href="#referencias-bibliograficas">Referencias</a>
+    </nav>
+    </section>
+
+    <section id="tech-section">
+        <h2>Tecnologias</h2>
+        <div id="tech-icons">
+                <img src="icones/java.png" alt="java">
+                <img src="icones/maven.png" alt="maven">
+                <img src="icones/hibernate.png" alt="postgres">
+                <img src="icones/postgres.png" alt="postgres">
+                <img src="icones/spring.png" alt="spring">
+                <img src="icones/angular.png" alt="angular">
+                <img src="icones/docker.png" alt="docker">
+                <img src="icones/kube.png" alt="kube">
+                <img src="icones/rabbit.png" alt="rabbit">
+                <img src="icones/aws.png" alt="aws">
+                <img src="icones/github.png" alt="github">
+                <img src="icones/idea.png" alt="idea">
+        </div>
+    </section>
+
+    <section class="section" id="educacao-formal">
+        <h2>Educacao</h2>
+        <div>
+            <img src="icones/uni.png" alt="uni" width="65px" height="55px">
+            <img src="icones/alura.png" alt="alura" width="75px" height="55px">
+        </div>
+    </section>
+
+
+    <section class="section" id="experiencia-profissional">
+        <h2>Experiencia</h2>
+        <div>
+            <img src="icones/itau.png" alt="itau" width="50px" height="50px">
+            <figcaption>2022-</figcaption>
+        </div>
+        <!-- Adicione mais tecnologias conforme necessário -->
+    </section>
+
+
+    <section>
+        <h2>Projetos</h2>
+        <p>Destaque alguns dos seus projetos.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Seu Nome. Todos os direitos reservados.</p>
+    </footer>
+
+<button id="back-to-top" onclick="scrollToTop()">Voltar ao Topo</button>
+
+    <script>
+        // Função para rolar suavemente para o topo da página
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
+
+        // Exibir ou ocultar o botão de voltar ao topo com base no rolar da página
+        window.onscroll = function() {
+            var btn = document.getElementById('back-to-top');
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                btn.style.display = 'block';
+            } else {
+                btn.style.display = 'none';
+            }
+        };
+    </script>
+
+</body>
+</html>
