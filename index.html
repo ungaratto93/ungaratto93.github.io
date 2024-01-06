@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seu Nome - Desenvolvedor</title>
+    <title>@ungaratto93 - Desenvolvedor</title>
     <style>
         body {
             background-color: #1a1a1a;
@@ -31,32 +31,33 @@
         }
 
         section {
-            padding: 50px 20px;
+            padding: 50px 10px;
             text-align: center;
         }
 
         section h2 {
             margin-bottom: 10px;
+            margin-top: 10px;
         }
 
-        .tech {
-            display:flex;
-            flex-wrap: wrap;
-            justify-content: center;
+        #tech-section {
+            text-align: center;
         }
 
-        .tech div {
-            margin: 5px;
-            width: 50px;
+        #tech-section h2 {
+            margin-bottom: 20px;
         }
 
-        .tech img {
-            width: 50px;
-            height: 50px;
-            object-fit: contain;
-            margin-bottom: 10px;
+        #tech-icons {
+            display: flex;
+            justify-content: center; /* Alinha os ícones no centro horizontalmente */
         }
 
+        #tech-icons img {
+            width: 30px; /* Ajuste conforme necessário */
+            height: 30px;
+            margin: 0 5px; /* Espaçamento entre os ícones */
+        }
 
         #back-to-top {
             display: none;
@@ -83,6 +84,7 @@
             padding: 20px 0;
         }
     </style>
+
 </head>
 <body>
 
@@ -94,41 +96,36 @@
     <section>
         <h2>Navegue por aqui</h2>
         <nav>
-            <a href="#tecnologias">Tecnologias</a>
+            <a href="#tech-section">Tecnologias</a>
             <a href="#educacao-formal">Educacao</a>
             <a href="#experiencia-profissional">Experiencia</a>
             <a href="#referencias-bibliograficas">Referencias</a>
     </nav>
     </section>
 
-
-    <section class="tech" id="tecnologias">
+    <section id="tech-section">
         <h2>Tecnologias</h2>
-        <div>
-            <img src="icones/java.png" alt="java">
+        <div id="tech-icons">
+                <img src="icones/java.png" alt="java">
+                <img src="icones/maven.png" alt="maven">
+                <img src="icones/hibernate.png" alt="postgres">
+                <img src="icones/postgres.png" alt="postgres">
+                <img src="icones/spring.png" alt="spring">
+                <img src="icones/angular.png" alt="angular">
+                <img src="icones/docker.png" alt="docker">
+                <img src="icones/kube.png" alt="kube">
+                <img src="icones/rabbit.png" alt="rabbit">
+                <img src="icones/aws.png" alt="aws">
+                <img src="icones/github.png" alt="github">
+                <img src="icones/idea.png" alt="idea">
         </div>
-        <div>
-            <img src="icones/spring.png" alt="spring">
-        </div>
-        <div>
-            <img src="icones/angular.png" alt="angular">
-        </div>
-        <div>
-            <img src="icones/docker.png" alt="docker">
-        </div>
-        <div>
-            <img src="icones/aws.png" alt="aws">
-        </div>
-        <!-- Adicione mais tecnologias conforme necessário -->
     </section>
 
     <section class="section" id="educacao-formal">
         <h2>Educacao</h2>
         <div>
-            <img src="icones/uni.png" alt="uni" width="200px" height="70px">
-        </div>
-        <div>
-            <img src="icones/alura.png" alt="alura">
+            <img src="icones/uni.png" alt="uni" width="65px" height="55px">
+            <img src="icones/alura.png" alt="alura" width="75px" height="55px">
         </div>
     </section>
 
