@@ -48,12 +48,12 @@
             margin-bottom: 20px;
         }
 
-        #tech-icons {
+        .tech-icons {
             display: flex;
             justify-content: center; /* Alinha os ícones no centro horizontalmente */
         }
 
-        #tech-icons img {
+        .tech-icons img {
             width: 30px; /* Ajuste conforme necessário */
             height: 30px;
             margin: 10px 5px; /* Espaçamento entre os ícones */
@@ -105,7 +105,7 @@
 
     <section id="tech-section">
         <h2>Tecnologias</h2>
-        <div id="tech-icons">
+        <div class="tech-icons">
                 <img src="icones/java.png" alt="java">
                 <img src="icones/maven.png" alt="maven">
                 <img src="icones/hibernate.png" alt="hibernate">
@@ -113,7 +113,7 @@
                 <img src="icones/docker.png" alt="docker">
                 <img src="icones/aws.png" alt="aws">
         </div>
-        <div id="tech-icons">
+        <div class="tech-icons">
                 <img src="icones/postgres.png" alt="postgres">
                 <img src="icones/kube.png" alt="kube">
                 <img src="icones/rabbit.png" alt="rabbit">
@@ -126,8 +126,8 @@
     <section class="section" id="educacao-formal">
         <h2>Educacao</h2>
         <div>
-            <img src="icones/uni.png" alt="uni" width="65px" height="55px">
-            <img src="icones/alura.png" alt="alura" width="75px" height="55px">
+            <img src="icones/uni.png" alt="uni" width="55px" height="55px">
+            <img src="icones/alura.png" alt="alura" width="55px" height="55px">
         </div>
     </section>
 
@@ -144,8 +144,30 @@
 
     <section>
         <h2>Projetos</h2>
-        <p>Destaque alguns dos seus projetos.</p>
+        <article>
+            <a href="https://github.com/ungaratto93/fx" target="__blank"> > API para calculo cambial, seguindo princípios de arquitetura limpa</a>
+        </article>
+        <article>
+            <a href="https://github.com/ungaratto93/layers" target="__blank"> > A spring boot layered template app with docker, flyway and mysql</a>
+        </article>
     </section>
+
+
+    <section id="tech-section">
+        <h2>Redes</h2>
+        <div class="tech-icons">
+            <a href="https://remoteok.com/@ungaratto93" target="__blank">
+                <img src="icones/remoteok.png" alt="remoteok">
+            </a>
+            <a href="https://github.com/ungaratto93" target="__blank">
+                <img src="icones/github.png" alt="github">
+            </a>
+            <a href="https://www.linkedin.com/in/eduardoungarattolima/" target="__blank">
+                <img src="icones/link.png" alt="link">
+            </a>
+        </div>
+    </section>
+
 
     <footer>
         <p>&copy; 2023 Seu Nome. Todos os direitos reservados.</p>
